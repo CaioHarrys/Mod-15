@@ -1,0 +1,42 @@
+.sms{
+    background-image: url(./Assets/IMGS/studant.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+}
+.low-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box-1{
+    background-color: blue;
+    width: 64px;
+    color: white;
+    border-radius: 7px;
+    padding: 5px 5px;
+}
+.box-1>h1{
+    color: whitesmoke;
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+}
+.box-1>p{
+    color: whitesmoke;
+    font-size: 0.5em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    align-self: baseline;
+}
+.low-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
