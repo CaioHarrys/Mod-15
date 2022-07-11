@@ -1,11 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Roboto+Slab:wght@100&family=Roboto:wght@500&display=swap');
+:root{
+    /*COLORS*/
+    --bg-color-primary:#260104;
+    --bg-color-second:#730220;
+    --bg-color-third:#5F1B8C;
+    --bg-color-fourth:#6F36BF;
+    --bg-color-fifth:#F2F2F0;
+    /*FONT*/
+    --font-primary:'Roboto', sans-serif;
+    --font-secondary:'Mukta', sans-serif;
+    --font-third:'Roboto Slab', serif;
+}
+.grow{
+    height:450px;
+    background: linear-gradient(to right, #730220 75%, #260104 25%);
+}
 .sms{
-    background-image: url(./Assets/IMGS/studant.jpeg);
+    background-image: url(./Assets/IMGS/studant-removebg-preview.png);
+    background-size:contain;
     background-repeat: no-repeat;
-    background-size:cover;
     width: 100%;
-    height: 250px;
-    border-radius: 50%;
+    height: 100%;
     display: flex;
+    background-position: center;
 }
 .low-1{
     width: 100%;
@@ -13,30 +30,216 @@
     flex-direction: column;
     justify-content: space-around;
 }
+.inner{
+    display: flex;
+    justify-content: center;
+}
+.inned{
+    display: flex;
+    justify-content: center;
+}
+.inside{
+    display: flex;
+    justify-content: center;
+}
+.boxed{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    margin: 10px 20px;
+}
+.boxed>h1{
+    color: var(--bg-color-fifth);
+    font-family: var(--font-primary);
+    font-size: 3.8em;
+    font-weight: bold;
+}
+.boxed>p{
+    color: var(--bg-color-fifth);
+    font-family: var(--font-third);
+    font-size: 1em;
+    font-weight: bold;
+}
+.lil-box{
+    display: flex;
+    flex-direction: row;
+}
+.lil-item{
+    margin: 0px 5px;
+}
+.lil-item>button{
+    display: flex;
+    flex-direction: row;
+}
+.button{
+    background-color: var(--bg-color-fifth);
+    color: var(--bg-color-primary);
+    border: 0px;
+    border-radius: 7px;
+    padding: 10px 10px;
+    font-size: 0.9em;
+}
+.button>h1{
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    font-size: 0.9em;
+    text-align: center;
+    align-self: center;
+    margin: 0px 5px;
+    padding: 0;
+}
+.button>img{
+    width:23px;
+}
+.ok{
+    background-color: var(--bg-color-fourth);
+    color: var(--bg-color-fifth);
+    font-family: var(--font-primary);
+    border: 0px;
+    border-radius: 7px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    height: 100%;
+}
+.ok>h1{
+    font-size: 0.9em;
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+.ok:hover{
+    background-color: var(--bg-color-third);
+}
+.ok:active{
+    border: 0px;
+    background-color: var(--bg-color-fourth);
+    box-shadow: none;
+}
+.ok:focus{
+    background-color: var(--bg-color-fourth);
+    border: 0px;
+    box-shadow: none;
+}
 .box-1{
-    background-color: blue;
-    width: 64px;
+    background-color: #260104;
     color: white;
     border-radius: 7px;
-    padding: 5px 5px;
+    padding: 10px 10px;
 }
 .box-1>h1{
     color: whitesmoke;
-    font-size: 1.5em;
-    margin: 0;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    font-size: 2.5em;
+    margin: 0px 5px;
     text-align: center;
 }
 .box-1>p{
     color: whitesmoke;
-    font-size: 0.5em;
+    font-family: var(--font-secondary);
+    font-size: 0.7em;
     padding: 0;
-    margin: 0;
+    margin: 0px 5px;
     text-align: center;
     align-self: baseline;
+}
+.box-2{
+    width: auto;
+    padding: 0px 0px;
+    border-radius: 7px;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+    padding: 5px 5px;
+}
+.box-2>p{
+    font-family: var(--font-primary);
+    align-self: center;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.box-2>img{
+    width: 54px;
+}
+.box-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-color-fifth);
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+.box-4>h1{
+    color: var(--bg-color-primary);
+    font-size: 2.5em !important;
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+.box-4>p{
+    font-family: var(--font-secondary);
+    font-size: 0.8em;
+    text-align: center;
+    color:grey;
+    margin: 0;
+    padding: 0;
 }
 .low-2{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
+@media screen and (max-width: 600px) {
+    .grow{
+        height:100%;
+        background: linear-gradient( #730220 75%, #260104 25%);
+    }
+    .sms{
+        height: 250px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) { 
+    .grow{
+        background: linear-gradient( #730220 75%, #260104 25%);
+    }
+    .sms{
+        height: 250px;
+    }
+ }
+ @media screen and (max-width: 997px) { 
+    .grow{
+        height: 100%;
+        background: linear-gradient( #730220 75%, #260104 25%);
+    }
+    .sms{
+        height: 250px;
+    }
+    .inside{
+        justify-content: flex-end;
+    }
+    .box-2{
+        width: auto;
+        padding: 5px 10px;
+    }
+    .inner {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0px 45px;
+    }
+    .inned {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0px 50px;
+    }
+  }
