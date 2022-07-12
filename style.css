@@ -12,6 +12,8 @@
     --font-third:'Roboto Slab', serif;
 }
 .grow{
+    width: 100%;
+    margin: 0;
     height:450px;
     background: linear-gradient(to right, #730220 75%, #260104 25%);
 }
@@ -197,6 +199,40 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+.img-cards{
+    width: 64px;
+    align-self: center;
+}
+.card{
+    border: 0px;
+}
+.card-title{
+    font-family: var(--font-primary);
+    font-size: 1.5em;
+    align-self: center;
+    text-align: center;
+}
+.card-text{
+    font-family: var(--font-secondary);
+    font-size: 1em;
+    align-self: center;
+    text-align: center;
+}
+/*SEC-1*/
+.title{
+    font-family: var(--font-primary);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 2vh;
+}
+.paragraph{
+    font-family: var(--font-secondary);
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+}
 @media screen and (max-width: 600px) {
     .grow{
         height:100%;
@@ -204,6 +240,14 @@
     }
     .sms{
         height: 250px;
+    }
+    .card{
+        align-self: center;
+    }
+    .inner {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0px 0px !important;
     }
 }
 
@@ -215,6 +259,11 @@
     }
     .sms{
         height: 250px;
+    }
+    .inner {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0px 25px;
     }
  }
  @media screen and (max-width: 997px) { 
