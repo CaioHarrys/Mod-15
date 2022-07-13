@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito&family=Roboto+Slab:wght@100&family=Roboto:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito&family=PT+Sans&family=Roboto+Slab:wght@100&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 :root {
     /*COLORS*/
     --bg-color-primary: #260104;
@@ -9,11 +9,31 @@
     --bg-color-fifth: #F2F2F0;
     /*FONT*/
     --font-primary: 'Nunito', sans-serif;
-    --font-secondary: 'Mukta', sans-serif;
+    --font-secondary:  'Rubik', sans-serif;
     --font-third: 'Roboto Slab', serif;
 }
 
 .cardis-1 {
+    background-color: #FBEBD5;
+    border-radius: 15px;
+}
+.cardis-2 {
+    background-color: #FEDFDC;
+    border-radius: 15px;
+}
+.cardis-3 {
+    background-color: #FCF7DE;
+    border-radius: 15px;
+}
+.cardis-4 {
+    background-color: #FEDFDC;
+    border-radius: 15px;
+}
+.cardis-5 {
+    background-color: #E2DDE9;
+    border-radius: 15px;
+}
+.cardis-6 {
     background-color: #FBEBD5;
     border-radius: 15px;
 }
@@ -258,9 +278,34 @@
 
 .card-text {
     font-family: var(--font-secondary);
+    color: rgb(122 115 115);
     font-size: 1em;
     align-self: center;
     text-align: center;
+}
+.getis{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-color: whitesmoke !important;
+    color: var(--bg-color-primary);
+    font-family: var(--bg-color-primary);
+    font-weight: 600 !important;
+    border: 0px;
+    border-radius: 10px !important; 
+    padding: 10px 20px !important;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.getis>img{
+    margin-left: 10px;
+    width: 15px;
+}
+.getis:hover{
+    border: 0px !important;
+    transform: scale(1.05);
 }
 
 /*SEC-1*/
