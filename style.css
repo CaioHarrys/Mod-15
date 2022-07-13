@@ -11,6 +11,10 @@
     --font-secondary:'Mukta', sans-serif;
     --font-third:'Roboto Slab', serif;
 }
+.cardis-1{
+    background-color: #FBEBD5;
+    border-radius: 15px;
+}
 .grow{
     width: 100%;
     margin: 0;
@@ -123,6 +127,9 @@
     border: 0px;
     box-shadow: none;
 }
+.alg{
+    align-self: center !important;
+}
 .box-1{
     background-color: #260104;
     color: white;
@@ -204,7 +211,7 @@
     align-self: center;
 }
 .card{
-    border: 0px;
+    border: 0px !important;
 }
 .card-title{
     font-family: var(--font-primary);
@@ -261,7 +268,6 @@
     font-size: 2.5em;
     font-weight: normal;
     text-align: left;
-    margin-top: 20vh;
     margin-bottom: 2vh;
 }
 .body-text{
