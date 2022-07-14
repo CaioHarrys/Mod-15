@@ -28,7 +28,7 @@
     </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Products</a>
         </li>
@@ -156,7 +156,7 @@
     <div class="img-float">
       <img class="img-floatis-3" src="./Assets/IMGS/flag.png" alt="">
     </div>
-    <div class="container" style="margin-bottom: 20vh;">
+    <div class="container">
       <div class="media lat">
         <img class="mr-1 lat-img align-self-center" src="./Assets/IMGS/Perfil.jpg" alt="Generic placeholder image">
         <div class="media-body bodis">
@@ -173,7 +173,10 @@
       </div>
     </div>
   </div>
-  <div class="container mt-5 mb-5">
+  <div class="img-float">
+    <img class="img-floatis-4" src="./Assets/IMGS/arrow.png" alt="">
+  </div>
+  <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-12 title">
         Services we Provide
@@ -504,26 +507,32 @@
   </div>
   <div class="container justify-content-evenly p-5"
     style="background-color: rgb(45, 38, 38); margin:0; padding:0; max-width:100%;">
-    <div class="row justify-content-evenly pb-1">
+    <div class="row justify-content-evenly pb-1 alinha">
       <div class="col-lg-2 col-md-2 ">
         <img src="./Assets/LOGO/logodone.svg" style="width:100px ;" alt="">
       </div>
-      <div class="col-lg-1 col-md-2">
+      <div class="col-sm-12 col-lg-1 col-md-2">
         <h1 class="title-3">Menu</h1>
         <p class="paragraph-1">Services</p>
         <p class="paragraph-1">Works</p>
         <p class="paragraph-1">About</p>
         <p class="paragraph-1">Contact</p>
       </div>
-      <div class="col-lg-1 col-md-2">
+      <div class="col-sm-12 col-lg-1 col-md-2">
         <h1 class="title-3">Connect</h1>
         <p class="paragraph-1">Facebook</p>
         <p class="paragraph-1">Instagram</p>
         <p class="paragraph-1">Linkedin</p>
         <p class="paragraph-1">Whatsapp</p>
       </div>
-      <div class="col-lg-6 col-md-6 title-3">
+      <div class="col-sm-12 col-lg-6 col-md-6 title-3">
         Subscribe to our newsletter
+        <form class="form-inline my-2 my-lg-0 alinhado">
+          <input class="form-control mr-sm-2" type="search" id="emailis" placeholder="Your email" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" href="#" onclick="subScribe()" type="submit"
+            value="Submit">Subscribe</button>
+          <div class="hide" id="error_message"></div>
+        </form>
       </div>
     </div>
     <div class="row p-2">
