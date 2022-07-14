@@ -12,7 +12,59 @@
     --font-secondary:  'Rubik', sans-serif;
     --font-third: 'Roboto Slab', serif;
 }
-
+.faq-wraps{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 40px;
+    transition: box-shadow 0.3s ease-in-out;
+    border: 1px solid #D7A5E6;
+    border-radius: 10px;
+}
+.toggle{
+    width: 100%;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #111130;
+    font-weight: 500;
+    font-family: var(--font--three);
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 15px 0;
+    border: 0px;
+    background-color: transparent;
+}
+.conteudo{
+    font-size: 15px;
+    color: #111130;
+    font-weight: 400;
+    font-family: var(--font--two);
+    position: relative;
+    text-align: justify;
+    line-height: 25px;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+.conteudo>a{
+    color: black;
+}
+.conteudo>:hover{
+    text-decoration: none;
+    color: var(--bg-color-third);
+}
+.title-3{
+    font-family: var(--font-primary);
+    color: var(--bg-color-fifth);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+}
 .cardis-1 {
     background-color: #FBEBD5;
     border-radius: 15px;
@@ -324,7 +376,20 @@
     font-weight: normal;
     text-align: center;
 }
-
+.paragraph-1{
+    font-family: var(--font-secondary);
+    font-size: 1em;
+    font-weight: normal;
+    text-align: left;
+    color: var(--bg-color-fifth);
+}
+.paragraph-2{
+    font-family: var(--font-secondary);
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    color: var(--bg-color-fifth);
+}
 .lat {
     display: flex;
     flex-direction: row;
