@@ -553,7 +553,9 @@
         top: -410px;
         transform: rotate(90deg);
     }
-
+    .table{
+        border-radius: 10px;
+    }
     .boxed {
         display: flex;
         flex-direction: column;
