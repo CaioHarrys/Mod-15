@@ -9,11 +9,11 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [x] Tarefa 1
-- [x] Tarefa 2
-- [x] Tarefa 3
-- [x] Tarefa 4
-- [x] Tarefa 5
+- [x] Definir o Layout do Site
+- [x] Definição de Cores e Fontes
+- [x] Desenvolvimento do Site
+- [x] Aperfeiçoamento do site
+- [x] Debug and Run 
 
 ## 💻 Pré-requisitos
 
@@ -29,13 +29,11 @@ Para instalar o MOD-15, siga estas etapas:
 
 Faça o Download dos arquivos e os abra, ou clone o projeto pelo github e o abra no seu editor de código.
 
-## ☕ Usando <nome_do_projeto>
+## ☕ Usando MOD-15
 
-Para usar <nome_do_projeto>, siga estas etapas:
+Para usar MOD-15, siga estas etapas:
 
-```
-<exemplo_de_uso>
-```
+- Abra e execute o arquivo index dentro da pasta Mod-15.
 
 Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
 
