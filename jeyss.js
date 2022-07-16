@@ -39,7 +39,7 @@ function subScribe() {
 
     var text;
     if (emailis == null || emailis == "") {
-        text = "Please Enter valid Name";
+        text = "Please Enter a Valid Email";
         error_message.innerHTML = text;
         document.getElementById('error_message').classList.remove('hide') = text;
         return false;
