@@ -14,6 +14,15 @@
     --font-third: 'Roboto Slab', serif;
 }
 
+#view {
+    display: flex;
+    font-size: 1em;
+    margin: 0%;
+    padding: 0;
+    font-family: var(--font-primary);
+    color: var(--bg-color-primary);
+}
+
 .img-floatis-4 {
     position: relative;
     width: 100px;
@@ -183,6 +192,7 @@
 .lil-item>button {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .button {
@@ -204,8 +214,18 @@
     padding: 0;
 }
 
+#goh {
+    color: var(--bg-color-fifth);
+    font-size: 1em;
+    font-family: var(--font-primary);
+    align-self: baseline;
+    margin: 0;
+    padding: 0;
+}
+
 .button>img {
     width: 23px;
+    margin-right: 5px;
 }
 
 .ok {
@@ -392,6 +412,7 @@
     text-align: center;
     margin-bottom: 2vh;
 }
+
 .paragraph {
     font-family: var(--font-secondary);
     font-size: 1em;
@@ -482,6 +503,10 @@
     transition: background-color 0.3s ease-in-out;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .butonis:hover {
     background-color: #e2b680;
 }
@@ -552,9 +577,11 @@
         top: -410px;
         transform: rotate(90deg);
     }
-    .table{
+
+    .table {
         border-radius: 10px;
     }
+
     .boxed {
         display: flex;
         flex-direction: column;
