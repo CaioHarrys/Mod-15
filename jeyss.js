@@ -90,7 +90,7 @@ function validateForm() {
         return false;
     } else if (mail.match(regx)) {
         alert("Form Submitted Successfully!");
-        document.getElementById('error_message').classList.add('hide');
+        document.getElementById('error_messages').classList.add('hide');
         var mail = document.getElementById("inputEmailis").value = "";
         var nombre = document.getElementById("inputNames").value = "";
         var ultimoNombre = document.getElementById("inputLastNames").value = "";
