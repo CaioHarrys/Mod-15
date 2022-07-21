@@ -38,8 +38,6 @@ function validatIon() {
 
     var regx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
-    error_message.style.padding = "10px";
-
     var text = error_message;
 
     if (mail.match(regx)) {
@@ -53,6 +51,47 @@ function validatIon() {
     document.getElementById('error_message').classList.remove('hide') = text;
     return false;
 
+}
+
+function validateForm() {
+    var nombre = document.getElementById("inputNames").value;
+    var ultimoNombre = document.getElementById("inputLastNames").value;
+    var phonis = document.getElementById("inputPhones").value;
+    var text = error_messages;
+    var mail = document.getElementById("inputEmailis").value;
+    var regx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    var gg = mail.value!=regx;
+
+    if (nombre == null || nombre == "") {
+        text = "Please Enter Valids Namis";
+        error_messages.innerHTML = text;
+        document.getElementById('error_messages').classList.remove("hide") = text;
+        return false;
+    }
+    if (ultimoNombre == null || ultimoNombre == "") {
+        text = "Please Enter Valids Lastis Namis";
+        error_messages.innerHTML = text;
+        document.getElementById('error_messages').classList.remove('hide') = text;
+        return false;
+    }
+    if (phonis.length < 9 || phonis.length > 9 || isNaN(phonis)) {
+        text = "Please Enter valid ID Number";
+        error_messages.innerHTML = text;
+        document.getElementById('error_messages').classList.remove('hide') = text;
+        return false;
+    }
+    if (gg || mail == "" || mail == null) {
+        text = "Please Enter Valids Email";
+        error_messages.innerHTML = text;
+        document.getElementById('error_messages').classList.remove('hide') = text;
+        return false;
+    }
+    alert("Form Submitted Successfully!");
+    document.getElementById('error_messages').classList.add('hide');
+    var nombre = document.getElementById("inputNames").value = "";
+    var ultimoNombre = document.getElementById("inputLastNames").value = "";
+    var phonis = document.getElementById("inputPhones").value = "";
+    return true;
 }
 
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
