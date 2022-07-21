@@ -60,7 +60,10 @@ function validateForm() {
     var text = error_messages;
     var mail = document.getElementById("inputEmailis").value;
     var regx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-    var gg = mail.value!=regx;
+    var adres = document.getElementById("inputAddress").value;
+    var citis = document.getElementById("inputCity").value;
+    var statis = document.getElementById("inputState").value;
+    var zipis = document.getElementById("inputZip").value;
 
     if (nombre == null || nombre == "") {
         text = "Please Enter Valids Namis";
@@ -80,17 +83,33 @@ function validateForm() {
         document.getElementById('error_messages').classList.remove('hide') = text;
         return false;
     }
-    if (gg || mail == "" || mail == null) {
+    if (mail == "" || mail == null) {
         text = "Please Enter Valids Email";
         error_messages.innerHTML = text;
         document.getElementById('error_messages').classList.remove('hide') = text;
         return false;
+    } else if (mail.match(regx)) {
+        alert("Form Submitted Successfully!");
+        document.getElementById('error_message').classList.add('hide');
+        var mail = document.getElementById("inputEmailis").value = "";
+        var nombre = document.getElementById("inputNames").value = "";
+        var ultimoNombre = document.getElementById("inputLastNames").value = "";
+        var phonis = document.getElementById("inputPhones").value = "";
+        var adres = document.getElementById("inputAddress").value = "";
+        var citis = document.getElementById("inputCity").value = "";
+        var statis = document.getElementById("inputState").value = "";
+        var zipis = document.getElementById("inputZip").value = "";
+        return true;
     }
     alert("Form Submitted Successfully!");
     document.getElementById('error_messages').classList.add('hide');
     var nombre = document.getElementById("inputNames").value = "";
     var ultimoNombre = document.getElementById("inputLastNames").value = "";
     var phonis = document.getElementById("inputPhones").value = "";
+    var adres = document.getElementById("inputAddress").value = "";
+    var citis = document.getElementById("inputCity").value = "";
+    var statis = document.getElementById("inputState").value = "";
+    var zipis = document.getElementById("inputZip").value = "";
     return true;
 }
 
