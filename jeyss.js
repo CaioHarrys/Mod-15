@@ -64,7 +64,7 @@ function validateForm() {
     var citis = document.getElementById("inputCity").value;
     var statis = document.getElementById("inputState").value;
     var zipis = document.getElementById("inputZip").value;
-
+   
     if (nombre == null || nombre == "") {
         text = "Please Enter Valids Namis";
         error_messages.innerHTML = text;
@@ -112,6 +112,6 @@ function validateForm() {
     var zipis = document.getElementById("inputZip").value = "";
     return true;
 }
-
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
