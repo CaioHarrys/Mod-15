@@ -67,9 +67,11 @@
     border: 1px solid #D7A5E6;
     border-radius: 10px;
 }
-.valid-feedback{
+
+.valid-feedback {
     color: white;
 }
+
 .toggle {
     width: 100%;
     justify-content: space-between;
